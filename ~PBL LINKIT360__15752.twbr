@@ -1,0 +1,3084 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='PBLLINKIT360' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_dataset_v5' inline='true' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_dataset_v5' name='textscan.10ecv4e1gf957d17j15u40n1gt6b'>
+            <connection class='textscan' directory='C:/Users/Michael Luwi Pallea/Downloads' filename='cleaned_dataset_v5.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='No 1' name='textscan.0vv5w9c1ppreab1dwqxk107snj6t'>
+            <connection class='textscan' directory='C:/Users/Michael Luwi Pallea/Downloads' filename='No 1.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Nomor 2' name='excel-direct.05ni4gj0ctr7hd19ke3bn1lz12tw'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Michael Luwi Pallea/Downloads/Nomor 2.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='Nomor 3' name='excel-direct.0rn45b31pc7x381amyt9a0ssgbeh'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Michael Luwi Pallea/Downloads/Nomor 3.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10ecv4e1gf957d17j15u40n1gt6b' name='cleaned_dataset_v5.csv' table='[cleaned_dataset_v5#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='id_ID'>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='created_at' ordinal='1' />
+            <column datatype='string' name='country' ordinal='2' />
+            <column datatype='string' name='operator' ordinal='3' />
+            <column datatype='string' name='service' ordinal='4' />
+            <column datatype='string' name='source' ordinal='5' />
+            <column datatype='string' name='msisdn' ordinal='6' />
+            <column datatype='integer' name='status' ordinal='7' />
+            <column datatype='string' name='cycle' ordinal='8' />
+            <column datatype='string' name='adnet' ordinal='9' />
+            <column datatype='integer' name='revenue' ordinal='10' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='subs_date' ordinal='11' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='renewal_date' ordinal='12' />
+            <column datatype='string' name='unsubs_from' ordinal='13' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='unsubs_date' ordinal='14' />
+            <column datatype='integer' name='service_price' ordinal='15' />
+            <column datatype='string' name='currency' ordinal='16' />
+            <column datatype='string' name='profile_status' ordinal='17' />
+            <column datatype='string' name='trxid' ordinal='18' />
+            <column datatype='integer' name='attempt_charging' ordinal='19' />
+            <column datatype='integer' name='success_billing' ordinal='20' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSS Z' name='updated_at' ordinal='21' />
+            <column datatype='string' name='sales_per_customer' ordinal='22' />
+            <column datatype='string' name='average_order_value' ordinal='23' />
+            <column datatype='string' name='inventory_turnover_ratio' ordinal='24' />
+            <column datatype='integer' name='churn_risk_score' ordinal='25' />
+            <column datatype='string' name='subscription_tenure_days' ordinal='26' />
+            <column datatype='string' name='failed_charge_ratio' ordinal='27' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rp&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;id_ID&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[operator]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>operator</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[service]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>service</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>msisdn</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[msisdn]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>msisdn</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cycle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cycle]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>cycle</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adnet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[adnet]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>adnet</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subs_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[subs_date]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>subs_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>renewal_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[renewal_date]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>renewal_date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unsubs_from</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[unsubs_from]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>unsubs_from</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unsubs_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[unsubs_date]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>unsubs_date</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[service_price]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>service_price</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[currency]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>currency</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profile_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[profile_status]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>profile_status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trxid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trxid]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>trxid</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attempt_charging</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[attempt_charging]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>attempt_charging</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>success_billing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[success_billing]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>success_billing</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_per_customer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sales_per_customer]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>sales_per_customer</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_order_value</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[average_order_value]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>average_order_value</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inventory_turnover_ratio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[inventory_turnover_ratio]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>inventory_turnover_ratio</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn_risk_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[churn_risk_score]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>churn_risk_score</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subscription_tenure_days</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subscription_tenure_days]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>subscription_tenure_days</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>failed_charge_ratio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[failed_charge_ratio]</local-name>
+            <parent-name>[cleaned_dataset_v5.csv]</parent-name>
+            <remote-alias>failed_charge_ratio</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:subs_date:qk]&quot;' value='Subscribed' />
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:unsubs_date:qk]&quot;' value='Unsubscribed' />
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:attempt_charging:qk]&quot;' value='Attempt Charging' />
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]&quot;' value='Total Revenue' />
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:subscription_churn:qk]&quot;' value='Subscription Churn' />
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:subscription_count:qk]&quot;' value='Subscription Count' />
+          <alias key='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:success_billing:qk]&quot;' value='Success Biling' />
+        </aliases>
+      </column>
+      <column caption='durasi langganan' datatype='integer' name='[Calculation_101893962635907072]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, [subs_date], IFNULL([unsubs_date], TODAY()))' />
+      </column>
+      <column caption='Live Time Value' datatype='real' name='[Calculation_101893962636546049]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[revenue] * DATEDIFF(&apos;day&apos;, [subs_date], IFNULL([unsubs_date], TODAY())) / 30' />
+      </column>
+      <column caption='Total Transaction' datatype='integer' name='[Calculation_101893962651394050]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([trxid])' />
+      </column>
+      <column caption='kepanjangan_status' datatype='string' name='[Calculation_101893962680201219]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [status] = 1 THEN &quot;Active and has been renewed&quot;&#13;&#10;ELSEIF [status] = 0 THEN &quot;Active but not yet renewed&quot;&#13;&#10;ELSEIF [status] = -1 THEN &quot;Unsubscribed&quot;&#13;&#10;END' />
+      </column>
+      <column caption='above avg' datatype='boolean' name='[Calculation_101893962681593860]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='SUM([revenue])&gt;=WINDOW_AVG(SUM([revenue]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='COUNT ID' datatype='integer' name='[Calculation_101893962789900294]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([id])' />
+      </column>
+      <column caption='CHURN RATE' datatype='real' name='[Calculation_101893962848583688]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [status] = -1 THEN 1 ELSE 0 END) / COUNT([id])' />
+      </column>
+      <column caption='Succes Rate' datatype='real' name='[Calculation_101893962857271305]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([success_billing]) / SUM([attempt_charging])' />
+      </column>
+      <column caption='test' datatype='integer' name='[Calculation_101893962858426378]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([attempt_charging])' />
+      </column>
+      <column caption='Retained' datatype='integer' name='[Calculation_101893962860990475]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [status] = 1 THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Pelanggan Awal' datatype='integer' name='[Calculation_101893962861236236]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [subs_date] &lt;= [unsubs_date] THEN [msisdn] END)' />
+      </column>
+      <column caption='Pelanggan Aktif' datatype='integer' name='[Calculation_101893962861350925]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Calculation_101893962860990475] = 1 THEN [msisdn] END)' />
+      </column>
+      <column caption='Retention Rate' datatype='real' name='[Calculation_101893962861551630]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Calculation_101893962860990475] = 1 THEN [msisdn] END) / COUNTD(IF [subs_date] &lt;= [unsubs_date] THEN [msisdn] END)' />
+      </column>
+      <column caption='cleaned_dataset_v5.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[attempt_charging]' role='measure' type='quantitative' />
+      <column datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[status]' role='dimension' type='ordinal' />
+      <column datatype='datetime' name='[subs_date]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[success_billing]' role='measure' type='quantitative' />
+      <column datatype='datetime' name='[unsubs_date]' role='dimension' type='ordinal' />
+      <column-instance column='[subs_date]' derivation='Count' name='[cnt:subs_date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[unsubs_date]' derivation='Count' name='[cnt:unsubs_date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[subs_date]' derivation='CountD' name='[ctd:subs_date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[unsubs_date]' derivation='CountD' name='[ctd:unsubs_date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[attempt_charging]' derivation='Sum' name='[sum:attempt_charging:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[success_billing]' derivation='Sum' name='[sum:success_billing:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_101893962681593860]' derivation='User' name='[usr:Calculation_101893962681593860:nk]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_101893962789900294]' derivation='User' name='[usr:Calculation_101893962789900294:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Datasources/cleaned_dataset_v5.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/03/2024 07:38:28 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='cleaned_dataset_v5' increment-value='%null%' refresh-type='create' rows-inserted='564619' timestamp-start='2024-12-03 19:38:26.796' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>564619</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[created_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>78230</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>operator</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[operator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>operator</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>service</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>service</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>msisdn</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[msisdn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>msisdn</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>553843</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cycle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cycle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cycle</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adnet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[adnet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adnet</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subs_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[subs_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subs_date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>553843</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>renewal_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[renewal_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>renewal_date</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>160798</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unsubs_from</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[unsubs_from]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unsubs_from</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unsubs_date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[unsubs_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unsubs_date</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>150433</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>service_price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[service_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>service_price</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>currency</remote-alias>
+              <ordinal>16</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>profile_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[profile_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>profile_status</remote-alias>
+              <ordinal>17</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trxid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trxid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trxid</remote-alias>
+              <ordinal>18</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>564619</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attempt_charging</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[attempt_charging]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attempt_charging</remote-alias>
+              <ordinal>19</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>206</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>success_billing</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[success_billing]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>success_billing</remote-alias>
+              <ordinal>20</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[updated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at</remote-alias>
+              <ordinal>21</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>78230</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_per_customer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sales_per_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_per_customer</remote-alias>
+              <ordinal>22</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_order_value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[average_order_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_order_value</remote-alias>
+              <ordinal>23</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1584</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inventory_turnover_ratio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[inventory_turnover_ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inventory_turnover_ratio</remote-alias>
+              <ordinal>24</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_risk_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[churn_risk_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churn_risk_score</remote-alias>
+              <ordinal>25</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subscription_tenure_days</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subscription_tenure_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subscription_tenure_days</remote-alias>
+              <ordinal>26</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>failed_charge_ratio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[failed_charge_ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>failed_charge_ratio</remote-alias>
+              <ordinal>27</ordinal>
+              <family>cleaned_dataset_v5.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1308</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:subs_date:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[ctd:subs_date:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:unsubs_date:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962789900294:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[ctd:unsubs_date:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_101893962681593860:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='id' />
+        <field-sort-custom-order field='created_at' />
+        <field-sort-custom-order field='country' />
+        <field-sort-custom-order field='operator' />
+        <field-sort-custom-order field='service' />
+        <field-sort-custom-order field='source' />
+        <field-sort-custom-order field='msisdn' />
+        <field-sort-custom-order field='status' />
+        <field-sort-custom-order field='Calculation_101893962680201219' />
+        <field-sort-custom-order field='cycle' />
+        <field-sort-custom-order field='adnet' />
+        <field-sort-custom-order field='revenue' />
+        <field-sort-custom-order field='subs_date' />
+        <field-sort-custom-order field='renewal_date' />
+        <field-sort-custom-order field='unsubs_from' />
+        <field-sort-custom-order field='unsubs_date' />
+        <field-sort-custom-order field='service_price' />
+        <field-sort-custom-order field='currency' />
+        <field-sort-custom-order field='profile_status' />
+        <field-sort-custom-order field='trxid' />
+        <field-sort-custom-order field='attempt_charging' />
+        <field-sort-custom-order field='success_billing' />
+        <field-sort-custom-order field='Calculation_101893962858426378' />
+        <field-sort-custom-order field='updated_at' />
+        <field-sort-custom-order field='sales_per_customer' />
+        <field-sort-custom-order field='average_order_value' />
+        <field-sort-custom-order field='inventory_turnover_ratio' />
+        <field-sort-custom-order field='churn_risk_score' />
+        <field-sort-custom-order field='subscription_tenure_days' />
+        <field-sort-custom-order field='failed_charge_ratio' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_101893962635907072' />
+        <field-sort-custom-order field='Calculation_101893962636546049' />
+        <field-sort-custom-order field='Calculation_101893962651394050' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_dataset_v5.csv' id='cleaned_dataset_v5.csv_4B7C4129B01F45A7B8FCA2272EB06B8B'>
+            <properties context=''>
+              <relation connection='textscan.10ecv4e1gf957d17j15u40n1gt6b' name='cleaned_dataset_v5.csv' table='[cleaned_dataset_v5#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='id_ID'>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='created_at' ordinal='1' />
+                  <column datatype='string' name='country' ordinal='2' />
+                  <column datatype='string' name='operator' ordinal='3' />
+                  <column datatype='string' name='service' ordinal='4' />
+                  <column datatype='string' name='source' ordinal='5' />
+                  <column datatype='string' name='msisdn' ordinal='6' />
+                  <column datatype='integer' name='status' ordinal='7' />
+                  <column datatype='string' name='cycle' ordinal='8' />
+                  <column datatype='string' name='adnet' ordinal='9' />
+                  <column datatype='integer' name='revenue' ordinal='10' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='subs_date' ordinal='11' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='renewal_date' ordinal='12' />
+                  <column datatype='string' name='unsubs_from' ordinal='13' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='unsubs_date' ordinal='14' />
+                  <column datatype='integer' name='service_price' ordinal='15' />
+                  <column datatype='string' name='currency' ordinal='16' />
+                  <column datatype='string' name='profile_status' ordinal='17' />
+                  <column datatype='string' name='trxid' ordinal='18' />
+                  <column datatype='integer' name='attempt_charging' ordinal='19' />
+                  <column datatype='integer' name='success_billing' ordinal='20' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSS Z' name='updated_at' ordinal='21' />
+                  <column datatype='string' name='sales_per_customer' ordinal='22' />
+                  <column datatype='string' name='average_order_value' ordinal='23' />
+                  <column datatype='string' name='inventory_turnover_ratio' ordinal='24' />
+                  <column datatype='integer' name='churn_risk_score' ordinal='25' />
+                  <column datatype='string' name='subscription_tenure_days' ordinal='26' />
+                  <column datatype='string' name='failed_charge_ratio' ordinal='27' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='#Subs and Unsubs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column-instance column='[subs_date]' derivation='Count' name='[cnt:subs_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[unsubs_date]' derivation='Count' name='[cnt:unsubs_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[subs_date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[unsubs_date]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:subs_date:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:unsubs_date:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]</column>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]</rows>
+        <cols>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{BEEA55B6-26EB-4B79-80F6-A6C2EE65DF0E}' />
+    </worksheet>
+    <worksheet name='#Subs and Unsubs (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma'>Subscription Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column-instance column='[subs_date]' derivation='Count' name='[cnt:subs_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[subs_date]' role='dimension' type='ordinal' />
+            <column-instance column='[subs_date]' derivation='Month-Trunc' name='[tmn:subs_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[cnt:subs_date:qk]</rows>
+        <cols>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[tmn:subs_date:qk]</cols>
+      </table>
+      <simple-id uuid='{CC89E8C8-5282-4ABE-B3B2-94DD75D0EA29}' />
+    </worksheet>
+    <worksheet name='CHURN RATE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column caption='CHURN RATE' datatype='real' name='[Calculation_101893962848583688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [status] = -1 THEN 1 ELSE 0 END) / COUNT([id])' />
+            </column>
+            <column datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[status]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_101893962848583688]' derivation='User' name='[usr:Calculation_101893962848583688:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962848583688:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962848583688:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Semibold' fontsize='14'>&lt;</run>
+                <run fontname='Tableau Semibold' fontsize='14'>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962848583688:qk]</run>
+                <run fontname='Tableau Semibold' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5C94BAF5-112B-4616-B2A3-AD2CA209F7D3}' />
+    </worksheet>
+    <worksheet name='Campaign'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma' fontsize='12'><![CDATA[<Sheet Name> Performance by Adnet]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column datatype='string' name='[adnet]' role='dimension' type='nominal' />
+            <column-instance column='[adnet]' derivation='None' name='[none:adnet:nk]' pivot='key' type='nominal' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' />
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:adnet:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{69C2BBEB-BDFE-4122-84C4-3A1BA777D03E}' />
+    </worksheet>
+    <worksheet name='KPIS bill and Attempt'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>attempt and Succes Billing</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column datatype='integer' name='[attempt_charging]' role='measure' type='quantitative' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[success_billing]' role='measure' type='quantitative' />
+            <column-instance column='[attempt_charging]' derivation='Sum' name='[sum:attempt_charging:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[success_billing]' derivation='Sum' name='[sum:success_billing:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:attempt_charging:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:success_billing:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]</column>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' value='14' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-width' value='0' />
+            <format attr='title' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' value='filer service'>
+              <formatted-text>
+                <run>filer service</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Semibold' fontsize='14'>&lt;</run>
+                <run bold='true' fontname='Tableau Semibold' fontsize='14'>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]</run>
+                <run bold='true' fontname='Tableau Semibold' fontsize='14'>&gt;</run>
+                <run bold='true' fontname='Tableau Semibold' fontsize='14'>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3F48B2EC-7F2D-492C-BF1F-773A0F165AA8}' />
+    </worksheet>
+    <worksheet name='KPIs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]</column>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' value='236' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' value='Tahoma' />
+            <format attr='font-weight' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' value='bold' />
+            <format attr='font-size' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' value='12' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'>&lt;</run>
+                <run bold='true' fontsize='14'>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[Multiple Values]</run>
+                <run bold='true' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{B408DB27-F8E3-449B-AD5F-D594A2DCFDB3}' />
+    </worksheet>
+    <worksheet name='Retentionn by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma' fontsize='12'>RETENTION RATE BY MONTH</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column caption='Retained' datatype='integer' name='[Calculation_101893962860990475]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [status] = 1 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Retention Rate' datatype='real' name='[Calculation_101893962861551630]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Calculation_101893962860990475] = 1 THEN [msisdn] END) / COUNTD(IF [subs_date] &lt;= [unsubs_date] THEN [msisdn] END)' />
+            </column>
+            <column datatype='string' name='[msisdn]' role='dimension' type='nominal' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[status]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[subs_date]' role='dimension' type='ordinal' />
+            <column-instance column='[subs_date]' derivation='Month-Trunc' name='[tmn:subs_date:qk]' pivot='key' type='quantitative' />
+            <column datatype='datetime' name='[unsubs_date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_101893962861551630]' derivation='User' name='[usr:Calculation_101893962861551630:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='display' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[tmn:subs_date:qk]' scope='cols' value='MONTH' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk] + [federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk])</rows>
+        <cols>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[tmn:subs_date:qk]</cols>
+      </table>
+      <simple-id uuid='{718FCC60-A94F-43C2-9F48-CA270858BF54}' />
+    </worksheet>
+    <worksheet name='Revenue by Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma' fontsize='12'>REVENUE BY MONTH</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[subs_date]' role='dimension' type='ordinal' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[subs_date]' derivation='Month-Trunc' name='[tmn:subs_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='title' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[tmn:subs_date:qk]' scope='cols' value='MONTH' />
+            <encoding attr='space' class='1' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+                <format attr='shape' value='icons8-down-windows-metro/icons8-down-26.png' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk] + [federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk])</rows>
+        <cols>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[tmn:subs_date:qk]</cols>
+      </table>
+      <simple-id uuid='{6D13D2C8-4562-4077-B4F9-EA40CA043A08}' />
+    </worksheet>
+    <worksheet name='Revenue by Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column caption='kepanjangan_status' datatype='string' name='[Calculation_101893962680201219]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [status] = 1 THEN &quot;Active and has been renewed&quot;&#13;&#10;ELSEIF [status] = 0 THEN &quot;Active but not yet renewed&quot;&#13;&#10;ELSEIF [status] = -1 THEN &quot;Unsubscribed&quot;&#13;&#10;END' />
+            </column>
+            <column caption='above avg' datatype='boolean' name='[Calculation_101893962681593860]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='SUM([revenue])&gt;=WINDOW_AVG(SUM([revenue]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[service]' derivation='Attribute' name='[attr:service:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_101893962680201219]' derivation='None' name='[none:Calculation_101893962680201219:nk]' pivot='key' type='nominal' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[status]' role='dimension' type='ordinal' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_101893962681593860]' derivation='User' name='[usr:Calculation_101893962681593860:nk]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='display' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' field-type='quantitative' max='703221678' min='78585545' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='font-size' id='refline0' value='11' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' value='Filter by Service'>
+              <formatted-text>
+                <run fontsize='12'>Filter by Service</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962681593860:nk]' />
+              <tooltip column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[attr:service:nk]' />
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' z-order='1' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]</rows>
+        <cols>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:Calculation_101893962680201219:nk]</cols>
+      </table>
+      <simple-id uuid='{7ED6055B-A276-4B71-9D14-B4AE6C410CD6}' />
+    </worksheet>
+    <worksheet name='Succes Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column caption='Succes Rate' datatype='real' name='[Calculation_101893962857271305]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([success_billing]) / SUM([attempt_charging])' />
+            </column>
+            <column datatype='integer' name='[attempt_charging]' role='measure' type='quantitative' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[success_billing]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_101893962857271305]' derivation='User' name='[usr:Calculation_101893962857271305:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962857271305:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962857271305:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tahoma' fontsize='14'>&lt;</run>
+                <run fontname='Tahoma' fontsize='14'>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962857271305:qk]</run>
+                <run fontname='Tahoma' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{270BE496-B88B-43F9-962A-FA3D7D3B4C38}' />
+    </worksheet>
+    <worksheet name='Total Retention'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tahoma' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+            <column caption='Retained' datatype='integer' name='[Calculation_101893962860990475]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [status] = 1 THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Retention Rate' datatype='real' name='[Calculation_101893962861551630]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Calculation_101893962860990475] = 1 THEN [msisdn] END) / COUNTD(IF [subs_date] &lt;= [unsubs_date] THEN [msisdn] END)' />
+            </column>
+            <column datatype='string' name='[msisdn]' role='dimension' type='nominal' />
+            <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[service]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[status]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[subs_date]' role='dimension' type='ordinal' />
+            <column datatype='datetime' name='[unsubs_date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_101893962861551630]' derivation='User' name='[usr:Calculation_101893962861551630:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:service:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tahoma' fontsize='14'>&lt;</run>
+                <run bold='true' fontname='Tahoma' fontsize='14'>[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962861551630:qk]</run>
+                <run bold='true' fontname='Tahoma' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B7CF9EC8-70F1-4828-B39B-DDF58EE45F41}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ddebf0' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='border-width' value='0' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='center' />
+          <format attr='vertical-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='1070' maxwidth='1910' minheight='1070' minwidth='1910' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+        <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[service]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96074' id='43' param='horz' type-v2='layout-flow' w='97802' x='1099' y='1963'>
+            <zone h='96074' id='8' type-v2='layout-basic' w='97802' x='1099' y='1963'>
+              <zone forceUpdate='true' h='7210' id='14' type-v2='text' w='79509' x='19392' y='1963'>
+                <formatted-text>
+                  <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>ANALYST DASHBOARD</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7210' id='15' is-scaled='1' param='Image/Logo Linkit.png' type-v2='bitmap' w='18293' x='1099' y='1963'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='6' />
+                </zone-style>
+              </zone>
+              <zone h='7942' id='18' name='KPIs' show-title='false' w='28324' x='1099' y='17664'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='24766' id='19' name='KPIS bill and Attempt' show-title='false' w='17905' x='1099' y='73271'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='8491' id='28' mode='dropdown' name='KPIS bill and Attempt' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' type-v2='filter' w='28324' x='1099' y='9173'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                </zone-style>
+              </zone>
+              <zone h='88864' id='31' param='vert' type-v2='layout-flow' w='29720' x='29423' y='9173'>
+                <zone fixed-size='367' h='36168' id='39' is-fixed='true' name='Revenue by Month' w='29720' x='29423' y='9173'>
+                  <layout-cache minheight='215' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='52696' id='32' name='Revenue by Status' w='29720' x='29423' y='45341'>
+                  <layout-cache minheight='182' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='36215' id='36' name='#Subs and Unsubs' w='28324' x='1099' y='25606'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='118' h='11450' id='35' is-fixed='true' name='CHURN RATE' w='28324' x='1099' y='61821'>
+                <layout-cache type-h='cell' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='24766' id='37' name='Succes Rate' w='10419' x='19004' y='73271'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='40747' id='38' name='Retentionn by Month' w='39758' x='59143' y='18692'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='9519' id='40' name='Total Retention' w='39758' x='59143' y='9173'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='38598' id='41' name='Campaign' w='39758' x='59143' y='59439'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='10' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='21' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2450' minheight='2450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98504' id='48' param='vert' type-v2='layout-flow' w='99162' x='419' y='748'>
+                <zone fixed-size='65' h='7210' id='15' is-fixed='true' is-scaled='1' param='Image/Logo Linkit.png' type-v2='bitmap' w='18293' x='1099' y='1963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7210' id='14' type-v2='text' w='79509' x='19392' y='1963'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>ANALYST DASHBOARD</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36168' id='39' is-fixed='true' name='Revenue by Month' w='29720' x='29423' y='9173'>
+                  <layout-cache minheight='215' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='82' h='9519' id='40' is-fixed='true' name='Total Retention' w='39758' x='59143' y='9173'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='7942' id='18' is-fixed='true' name='KPIs' show-title='false' w='28324' x='1099' y='17664'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40747' id='38' is-fixed='true' name='Retentionn by Month' w='39758' x='59143' y='18692'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36215' id='36' is-fixed='true' name='#Subs and Unsubs' w='28324' x='1099' y='25606'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52696' id='32' is-fixed='true' name='Revenue by Status' w='29720' x='29423' y='45341'>
+                  <layout-cache minheight='196' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38598' id='41' is-fixed='true' name='Campaign' w='39758' x='59143' y='59439'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='103' h='11450' id='35' is-fixed='true' name='CHURN RATE' w='28324' x='1099' y='61821'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='8491' id='28' mode='dropdown' name='KPIS bill and Attempt' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' type-v2='filter' w='28324' x='1099' y='9173'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='24766' id='19' is-fixed='true' name='KPIS bill and Attempt' show-title='false' w='17905' x='1099' y='73271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='24766' id='37' is-fixed='true' name='Succes Rate' w='10419' x='19004' y='73271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='21' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BE28FA03-739E-4974-A514-B0B85A216783}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard (2)'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ddebf0' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='border-width' value='0' />
+          <format attr='text-align' value='center' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='center' />
+          <format attr='vertical-align' value='center' />
+        </style-rule>
+      </style>
+      <size maxheight='1070' maxwidth='1910' minheight='1070' minwidth='1910' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='cleaned_dataset_v5' name='federated.1nfcobi1mm1snm14tg5jb0nt5h5h' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1nfcobi1mm1snm14tg5jb0nt5h5h'>
+        <column-instance column='[service]' derivation='None' name='[none:service:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[service]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='96074' id='52' param='horz' type-v2='layout-flow' w='97802' x='1099' y='1963'>
+            <zone h='96074' id='43' param='horz' type-v2='layout-flow' w='89425' x='1099' y='1963'>
+              <zone h='96074' id='8' type-v2='layout-basic' w='89425' x='1099' y='1963'>
+                <zone forceUpdate='true' h='7210' id='14' type-v2='text' w='72700' x='17824' y='1963'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>ANALYST DASHBOARD</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7210' id='15' is-scaled='1' param='Image/Logo Linkit.png' type-v2='bitmap' w='16725' x='1099' y='1963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='6' />
+                  </zone-style>
+                </zone>
+                <zone h='11308' id='18' name='KPIs' show-title='false' w='25898' x='1099' y='17664'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                  </zone-style>
+                </zone>
+                <zone h='24766' id='19' name='KPIS bill and Attempt' show-title='false' w='16371' x='1099' y='73271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                  </zone-style>
+                </zone>
+                <zone h='8491' id='28' mode='dropdown' name='KPIS bill and Attempt' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' type-v2='filter' w='25898' x='1099' y='9173'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                  </zone-style>
+                </zone>
+                <zone h='88864' id='31' param='vert' type-v2='layout-flow' w='27174' x='26997' y='9173'>
+                  <zone fixed-size='367' h='36168' id='39' is-fixed='true' name='Revenue by Month' w='27174' x='26997' y='9173'>
+                    <layout-cache minheight='190' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='10' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                  <zone h='52696' id='32' name='Revenue by Status' w='27174' x='26997' y='45341'>
+                    <layout-cache minheight='182' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='10' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='118' h='11451' id='35' is-fixed='true' name='CHURN RATE' w='25898' x='1099' y='61820'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='24766' id='37' name='Succes Rate' w='9527' x='17470' y='73271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='40747' id='38' name='Retentionn by Month' w='36353' x='54171' y='18692'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='9519' id='40' name='Total Retention' w='36353' x='54171' y='9173'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='38598' id='41' name='Campaign' w='36353' x='54171' y='59439'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='32848' id='50' name='#Subs and Unsubs (2)' w='25898' x='1099' y='28972'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='96074' id='51' is-fixed='true' param='vert' type-v2='layout-flow' w='8377' x='90524' y='1963'>
+              <zone h='4299' id='53' name='#Subs and Unsubs (2)' pane-specification-id='1' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[:Measure Names]' type-v2='color' w='8377' x='90524' y='1963'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='21' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2450' minheight='2450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98504' id='48' param='vert' type-v2='layout-flow' w='99162' x='419' y='748'>
+                <zone fixed-size='65' h='7210' id='15' is-fixed='true' is-scaled='1' param='Image/Logo Linkit.png' type-v2='bitmap' w='18293' x='1099' y='1963'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7210' id='14' type-v2='text' w='79509' x='19392' y='1963'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>ANALYST DASHBOARD</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36168' id='39' is-fixed='true' name='Revenue by Month' w='29720' x='29423' y='9173'>
+                  <layout-cache minheight='215' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='82' h='9519' id='40' is-fixed='true' name='Total Retention' w='39758' x='59143' y='9173'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='7942' id='18' is-fixed='true' name='KPIs' show-title='false' w='28324' x='1099' y='17664'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40747' id='38' is-fixed='true' name='Retentionn by Month' w='39758' x='59143' y='18692'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52696' id='32' is-fixed='true' name='Revenue by Status' w='29720' x='29423' y='45341'>
+                  <layout-cache minheight='196' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38598' id='41' is-fixed='true' name='Campaign' w='39758' x='59143' y='59439'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='103' h='11450' id='35' is-fixed='true' name='CHURN RATE' w='28324' x='1099' y='61821'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='8491' id='28' mode='dropdown' name='KPIS bill and Attempt' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' type-v2='filter' w='28324' x='1099' y='9173'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='24766' id='19' is-fixed='true' name='KPIS bill and Attempt' show-title='false' w='17905' x='1099' y='73271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='24766' id='37' is-fixed='true' name='Succes Rate' w='10419' x='19004' y='73271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='21' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{50EFF96A-E69B-4B01-9682-CEBECA632D2D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPIs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{708E675E-EF9F-4EF4-B815-47A0DC0177AF}' />
+    </window>
+    <window class='worksheet' name='Revenue by Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[none:service:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[usr:Calculation_101893962681593860:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{80DB9B24-FAC8-4407-AD43-95EF7F8A14CD}' />
+    </window>
+    <window class='worksheet' name='KPIS bill and Attempt'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0EDE7154-496F-4D6C-A80B-7A2BE15E2259}' />
+    </window>
+    <window class='worksheet' name='CHURN RATE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6376CA01-8B48-4617-B28B-6F9D5A29FE66}' />
+    </window>
+    <window class='worksheet' name='#Subs and Unsubs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9172B406-82B4-4B20-8689-2E5A3A77A34E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='#Subs and Unsubs (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{972A6A7B-7AAB-47FB-B227-D327797CBD1B}' />
+    </window>
+    <window class='worksheet' name='Succes Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CD1FE1DA-CBF1-48A5-8523-D260F30CE652}' />
+    </window>
+    <window class='worksheet' name='Retentionn by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B13A569C-F44D-4B29-A30E-09726177008E}' />
+    </window>
+    <window class='worksheet' name='Revenue by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B55F9754-505A-42C7-86E8-DFF84354FADA}' />
+    </window>
+    <window class='worksheet' name='Total Retention'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{178FB2B5-D145-467D-81AC-B5BF326B7D5A}' />
+    </window>
+    <window class='worksheet' name='Campaign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nfcobi1mm1snm14tg5jb0nt5h5h].[sum:revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6EFD038C-918B-4D9E-BCA8-3A38DB384001}' />
+    </window>
+    <window class='dashboard' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='#Subs and Unsubs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='CHURN RATE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Campaign'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPIS bill and Attempt'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPIs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Retentionn by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Succes Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Retention'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C61D56EE-4381-4BFF-9F6E-C9F4B91E7626}' />
+    </window>
+    <window class='dashboard' name='Dashboard (2)'>
+      <viewpoints>
+        <viewpoint name='#Subs and Unsubs (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='CHURN RATE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Campaign'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPIS bill and Attempt'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPIs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Retentionn by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue by Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Succes Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Retention'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='32' />
+      <simple-id uuid='{3C823533-3C23-40B1-BDD4-E2A272FEB1C7}' />
+    </window>
+  </windows>
+  <external>
+    <shapes>
+      <shape name='icons8-down-windows-metro/hj.png'>
+        iVBORw0KGgoAAAANSUhEUgAAAH0AAAB9CAYAAACPgGwlAAAACXBIWXMAAC4jAAAuIwF4pT92
+        AAACF2lUWHRYTUw6Y29tLmFkb2JlLnhtcAABAFVURi04AFhNTDpjb20uYWRvYmUueG1wADiN
+        pVTBjpswEL3nKyz14PZADGRpCwJWUbar9rA9ZCP1WDn2bKAL2DWmYfNrPfST+gu1MWLJKodK
+        e/PMvHmeNzN2et1Lyh5Boz0cyibDf3//wajkGf4W3fl3cgNF+fmk4P70dcdOjyzm+DpfpH3S
+        17IGTVFfV02b9BmmXOwhMWfrJtiAFH9Itje3I8RYGS60lgkhx+NxeVwthTqQII5j4ockDD2D
+        8NqnRtPea9o3hmGBBo4baJkqpS5Fg6xN96LTGcYLNFKvtVblfmJv2iUdPJ1NWTJRE8pbEix9
+        WxZCqcMna95a011yDz8Hw1lVOdwkqWph9yQhw1toRacYYIeaSDYKqAaeh3545QWBF6xS8iJ0
+        nvCp1194HkwoZ59jbvfGFYVR+D6Kg6vgQxx99KeEIXiO34mOFbbOPJxgzz4nizhdTjGZSZ4y
+        XD9cbNbz/58DZ9MMZKeqYb6cEaighkbbCQTjBDhLdKkreO7/utLn/TeUSUWbQ4Z7j8MD7SqN
+        8+IH8lBwQcuYnpIZ8yuUyNmy2nWyuz0skgkYGatRhrQ3d7oQKq9LVlCovoehH0UpmUVeVYh5
+        ZpcL6amcbbSBuXUTaidElW9o84uit1toOChQ71LyEnGxKucyb9YepzdujOmXMIQZVuYP+Acr
+        sFjXFqPr/gAAAOVJREFUeJzt06FNREEUQNFZHAXgCA1QBRpFaAIPColAQQs42qAAGsBhMCQI
+        JBhyEaxavzsk/xwzmadu8vLGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP6v6rw63pgd
+        VCezmtiy6rW63JidVU+zmmbYmx0wwVH1UF2v/x9jjOeZQWzR+tJfqrv+nFYX1fvstl1a4qU/
+        rlarqzHG5xjjcHbMDEtc+vf6/RljrGaGzLLEpbNk1X51U73NbmFHqvvqq7qd3QIAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAC/cLwZpXU+bSw3AAAAAASUVORK5CYII=
+      </shape>
+      <shape name='icons8-down-windows-metro/icons8-down-26.png'>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwY
+        AAAA6klEQVRIie3UMUrEQBQG4E+xUUFcVNTFSlgbsbSw9Shew+N4AMHKxgMICxZ2omwhKiJY
+        WNiuhRtQmQwzsxOr/eE1eUO+95IQZvmHHOMKb5O6xGEX0BDjP3XRBfQRgO5qI8sBZIzP1BvM
+        J57baLm+iJWa0Hqkt1UTWov02rYtglYLh8iGepFe7LFmQ7GNkqBQdvAo/Dmn1Cg0WGijJWyX
+        TolNLKQePlW+0UnOVHM4L0DOcpAmPdxnIDe+/xRF2cVzAvJguvcKDvAeQV6xNy3S5KgFe5kM
+        UjX7ePqBjDCojTQZ4BbX6HeFzPIrX/gbbCht3rwTAAAAAElFTkSuQmCC
+      </shape>
+      <shape name='icons8-down-windows-metro/icons8-down-52.png'>
+        iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwY
+        AAABy0lEQVRoge2YO0sDQRRGT4wmaBTfL0SENKKlnb/AQmxsBAtLwdpKBGtbsRAsLBQf2Iil
+        KBZW/gcfiGBvYyQY1GLcwhiTmc3dvRuYA7e7m/kOMzubGfB4PB6POxlgETgGHoC3n7oH9oE5
+        IKWWzpFx4A74qlE3QJdSRie2qC0T1JL04E3SPwhMOPROSg8ehdCYQ29eevAohEYcekelB5cW
+        agVyDv1DwuOLCw049g8jvH1LC/U79mcR3rq1hUB42WkvOTDLTgxpoZ4QzwxKBkiCUK9kAGmh
+        7hDP9EkGkBYKs2P5GapGEoT8DFUjCe+QqJA079gf7oIqaARtAfaAomNYiSoCuwj/iV1RECmv
+        WZugtu9Qu2Vfw5DHXENpzc4j5qghyrKSzAcwLS0TcKQgtB6VDEAndpeIUnUFpKMUAnMz+hqD
+        zBPhTsChmAFKEcoUgKm4ZAJWBYJXqhIwH6PHLzYtArrUJ2Y3VSOF+VsiJbQWb/zKpIFT6pfZ
+        jjt4NTLABeFlDojmnr0uOoBb3GXOgGaFvFbkgGvsZU4wR5NE0wZcYrfMEjsz5WSBc/6X2SGB
+        70wtssAhf78zG5qh6iWF+ba8AM/Agm4cj8fjaXS+Acv0pINqprH7AAAAAElFTkSuQmCC
+      </shape>
+    </shapes>
+  </external>
+</workbook>
